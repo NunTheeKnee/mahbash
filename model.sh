@@ -1,9 +1,6 @@
-echo "Enter a valid API Key: "
-read GEMINI_API_KEY
-
 curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent" \
   -H 'Content-Type: application/json' \
-  -H 'X-goog-api-key: $GEMINI_API_KEY' \
+  -H 'X-goog-api-key: <YOUR_GEMINI_API_KEY>' \
   -X POST \
   -d '{
     "contents": [
